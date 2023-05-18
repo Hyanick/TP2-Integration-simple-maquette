@@ -58,8 +58,10 @@ h1 {
   font-size: 5rem;
 }
 
-.main-left-container h2 {
+h2 {
   font-size: 1.8rem;
+}
+main h2 {
   color: var(--color2);
 }
 
@@ -106,4 +108,76 @@ button {
 
 .img-container img {
   height: 60px;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    /* background: red; */
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+
+  nav {
+    grid-template-columns: 40% 60%;
+  }
+  nav ul {
+    grid-gap: 10px;
+  }
+  main {
+    display: block;
+  }
+  footer,
+  .btn-container {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  button {
+    margin: 5px auto;
+  }
+
+  .img-container img {
+    margin: 20px auto;
+    height: 30px;
+  }
+
+  /* nav {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "nav";
+  }
+  .logo {
+    grid-area: logo;
+  }
+
+  nav ul {
+    grid-area: nav;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main-left"
+      "main-right";
+  }
+  li {
+    display: block;
+  }
+  .main-left {
+    grid-area: main-left;
+  }
+  .main-right {
+    grid-area: main-right;
+  } */
 }
