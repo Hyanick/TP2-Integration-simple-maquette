@@ -34,14 +34,13 @@ body {
 
 nav {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 50% 50%;
   padding: 10px 20px;
 }
 
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: end;
 }
 
 main {
@@ -70,40 +69,39 @@ h1 {
 
 footer {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 33% 67%;
   background: var(--color4);
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
 }
 
-.btn-container {
+/* .btn-container {
   display: grid;
-}
+} */
 
 button {
   border: none;
   color: var(--color1);
   background: var(--color2);
-  width: 200px;
-  padding: 10px 20px;
-  margin: 10px 0;
+  width: 150px;
+  padding: 10px 0px;
+  margin: 5px;
   border-radius: 5px;
   letter-spacing: 1px;
   font-weight: bold;
+  display: block;
 }
 
 .investors {
   display: grid;
+  align-items: center;
   height: 80%;
 }
 
 .img-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: auto;
-  padding-left: 80px;
 }
 
 .img-container img {
