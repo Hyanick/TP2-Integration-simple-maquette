@@ -41,6 +41,7 @@ nav {
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 
 main {
@@ -110,22 +111,22 @@ button {
   height: 60px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 302px) {
   body {
     /* background: red; */
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.2rem;
-  }
-  h3 {
     font-size: 1rem;
   }
+  h3 {
+    font-size: 0.8rem;
+  }
   p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   nav {
@@ -180,4 +181,50 @@ button {
   .main-right {
     grid-area: main-right;
   } */
+}
+
+@media screen and (max-width: 870px) {
+  body {
+    background: red;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  body {
+    background: green;
+  }
+  nav {
+    grid-template-columns: 35% 65%;
+  }
+  nav ul {
+    font-size: 0.7rem;
+  }
+  main {
+    display: block;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+  button {
+    margin: 5px auto;
+  }
+
+  .img-container img {
+    margin: 0 auto;
+    height: 33px;
+  }
 }
